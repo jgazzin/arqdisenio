@@ -1,0 +1,13 @@
+@import url('reset.css');
+@import url('gobales.css');
+@import url('btn.css');
+@import url('header.css');
+@import url('nosotros.css');
+@import url('opinion.css');
+@import url('servicios.css');
+@import url('contacto.css');
+@import url('faqs.css');
+@import url('footer.css');
+
+/* NORMALIZE */
+@import url( 'normalize.css' );

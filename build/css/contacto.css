@@ -1,0 +1,103 @@
+/* contacto */
+.contactForm {
+    background-image: url(../img/proyectos/render-fachada-2.jpg);
+    background-position: center center;
+    background-size: cover;
+
+  }
+
+  .contactForm .medio-container {
+    width: 50%;
+    height: auto;
+    background-color: #00826Ece;
+
+  }
+
+  @media (max-width: 576px) {
+    .contactForm .medio-container{
+      width: 100%;
+    }
+  }
+
+  .contactForm .form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5rem;
+
+  }
+  .contactForm .form .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .contactForm .form input {
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-claro);
+    width: 100%;
+  }
+
+  .form label {
+    margin-top: 8px;
+    color: var(--color-claro);
+  }
+  .contactForm .form label[for=terminos] {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .form .input{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form input{
+    color: var(--color-claro);
+  }
+
+  .form input:focus{
+    outline: none;
+    background-color: transparent;
+  }
+
+  .form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-claro);
+    width: 100%;
+    height: 100px;
+    color: var(--color-claro);
+    resize: none;
+    box-shadow: none;
+    margin-bottom: 4rem;
+  }
+
+  .contactForm .form textarea:focus {
+  outline: none;    /* Elimina el recuadro al enfocar */
+  box-shadow: none; /* Elimina cualquier sombra al enfocar */
+  background-color: transparent;
+}
+
+  /* eventos */
+  .success{
+    color: rgb(0, 71, 0);
+  }
+  .error{
+    color: rgb(112, 0, 0);
+  }
+
+  .enviando{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 1.5s all ease-in-out;
+
+  }
+
+ 

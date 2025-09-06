@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* md query */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 1.6rem;
+}
