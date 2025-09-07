@@ -26,6 +26,9 @@
   .cuad-borde{
     border: 3px solid var(--color-claro);
   }
+  .cuad-borde-negro{
+  border: 3px solid var(--color-texto);
+  }
   & div {
     width: 38px;
     height: 38px;

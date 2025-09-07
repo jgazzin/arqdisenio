@@ -1,0 +1,23 @@
+.botones-form{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.nav-bar i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.menuCotizar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    color: var(--color-principal);
+    font-weight: bolder;
+}
+
+.hidden{
+    display: none;
+}
