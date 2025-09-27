@@ -1,9 +1,14 @@
 /* contacto */
 .contactForm {
-    background-image: url(../img/proyectos/render-fachada-2.jpg);
+    background-image: url(../img/proyectos/lilas-fachada.png);
     background-position: center center;
     background-size: cover;
 
+  }
+
+  .contactForm > div{
+    display: flex;
+    justify-content: flex-end;
   }
 
   .contactForm .medio-container {

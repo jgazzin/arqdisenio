@@ -1,3 +1,81 @@
+/* experiencia */
+.exp_contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 576px) {
+    .exp_contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.exp_tarjeta{
+  background-color: var(--color-claro);
+  color: var(--color-texto);
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  gap: 2rem;
+
+}
+
+.exp_item{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.exp_item--contenido div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+  .exp_item.ppal{
+    background-color: var(--color-principal);
+  }
+  .exp_item.destaque{
+    background-color: var(--color-destaque-2);
+  }
+  .exp_item.gris{
+    background-color: var(--color-complementario);
+  }
+
+.exp_item--contenido{
+  color: var(--color-complementario);
+  margin-left: 2rem;
+
+}
+
+.exp_item--contenido-2{
+  color: var(--color-complementario);
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  flex: 1;
+}
+
+.exp_num{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+  .exp_num.ppal{
+    color: var(--color-principal);
+  }
+  .exp_num.destaque{
+    color: var(--color-destaque-2);
+  }
+  .exp_num.gris{
+    color: var(--color-complementario);
+  }
+
 /* servicios */
 .tarjetas {
     margin: 2rem 0;
