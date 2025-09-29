@@ -192,32 +192,21 @@ function mostrar(e) {
 
 
 // galeria
-document.addEventListener('DOMContentLoaded', function() {
-  const overlay = document.getElementById('galeriaOverlay');
-  const overlayImg = document.getElementById('imgOverlay');
-  const closeBtn = document.getElementById('closeOverlay');
-  const galeriaImgs = document.querySelectorAll('.galeria-grid img');
+// Galería horizontal flechas
+document.addEventListener('DOMContentLoaded', () => {
+  const galeriaScroll = document.getElementById('galeriaScroll');
+  const galeriaPrev = document.getElementById('galeriaPrev');
+  const galeriaNext = document.getElementById('galeriaNext');
+  const imgWidth = galeriaScroll?.querySelector('img')?.offsetWidth || 380;
 
-  galeriaImgs.forEach(img => {
-    img.addEventListener('click', function() {
-      overlay.classList.add('active');
-      overlayImg.src = this.src;
-      overlayImg.alt = this.alt;
+  if (galeriaPrev && galeriaNext && galeriaScroll) {
+    galeriaPrev.addEventListener('click', () => {
+      galeriaScroll.scrollBy({ left: -imgWidth - 16, behavior: 'smooth' });
     });
-  });
-
-  closeBtn.addEventListener('click', function() {
-    overlay.classList.remove('active');
-    overlayImg.src = '';
-  });
-
-  // Cerrar overlay al hacer click fuera de la imagen
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) {
-      overlay.classList.remove('active');
-      overlayImg.src = '';
-    }
-  });
+    galeriaNext.addEventListener('click', () => {
+      galeriaScroll.scrollBy({ left: imgWidth + 16, behavior: 'smooth' });
+    });
+  }
 });
 
 

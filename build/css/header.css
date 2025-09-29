@@ -90,7 +90,7 @@
 }
 
 .hero {
-  height: 400px;
+  height: 440px;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(../img/proyectos/render\ cualquiera.png);
   background-size: cover;
   background-position: center;
@@ -132,7 +132,7 @@
   }
 
   .hero .texto {
-    margin-top: 350px;
+    margin-top: 500px;
     width: 100%;
   }
 
